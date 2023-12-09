@@ -2,29 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link       
+      rel="icon"
+      type="image/png"
+      href="data:image/jpeg;base64,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"
+    />
+    <title>Shaq's Ecommerce Site</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
