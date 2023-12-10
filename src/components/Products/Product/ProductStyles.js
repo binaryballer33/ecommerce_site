@@ -8,6 +8,7 @@ const classes = {
     },
     cardMedia: { 
         height: '320px',
+        width: '320px',
     },
     cardContent: { 
         display: 'flex',
