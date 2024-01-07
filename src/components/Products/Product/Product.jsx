@@ -6,7 +6,9 @@ import classes from './ProductStyles'
 const Product = ({ product, onAddToCart }) => {
   return (
     <Card sx={classes.card}>
-      <CardMedia sx={classes.cardMedia} image={product.image.url} title={product.name} />
+      <div style={classes.cardMediaContainer}>
+        <CardMedia sx={classes.cardMedia} image={product.image.url} title={product.name} />
+      </div>
       <CardContent>
         <div style={classes.cardContent}>
           <Typography variant="h5" gutterBottom>{product.name}</Typography>

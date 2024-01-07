@@ -40,9 +40,10 @@ function App() {
   };
   
   useEffect(() => {
-    fetchCart();
     fetchProducts();
+    fetchCart();
   }, [cart]);
+
 
   return (
     <>

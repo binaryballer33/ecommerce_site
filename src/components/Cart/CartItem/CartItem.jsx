@@ -7,7 +7,7 @@ const CartItem = ({ item, handleUpdateCartQty, handleRemoveFromCart }) => {
     <Card sx={classes.card}>
       <CardMedia image={item.image.url} alt={item.name} sx={classes.cardMedia} />
       <CardContent sx={classes.cardContent}>
-        <Typography variant="h4">{item.name}</Typography>
+        <Typography variant="h5">{item.name}</Typography>
         <Typography variant="h5">{item.line_total.formatted_with_symbol}</Typography>
       </CardContent>
       <CardActions sx={classes.cartActions}>

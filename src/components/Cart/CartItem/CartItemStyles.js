@@ -1,7 +1,3 @@
-import { createTheme } from "@mui/material";
-
-const theme = createTheme();
-
 const classes = {
     card: {
         height: '600px'

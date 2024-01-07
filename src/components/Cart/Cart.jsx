@@ -14,10 +14,10 @@ const Cart = ({ cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
     </Typography>
   )
 
-  const FilledCart = ({ handleUpdateCartQty, handleRemoveFromCart }) => (
+  const FilledCart = () => (
     <>
     <Grid container spacing={3}>
-      {cart.line_items.map((item) => (
+      {cart?.line_items?.map((item) => (
         <Grid item xs={12} sm={6} md={4} key={item.id}>
           <CartItem item={item} handleUpdateCartQty={handleUpdateCartQty} handleRemoveFromCart={handleRemoveFromCart} />
         </Grid>

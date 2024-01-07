@@ -15,4 +15,12 @@ const classes = {
   },
 };
 
+// media query event handler for mobile view using javascript
+window.addEventListener('resize', function() {
+  if (window.matchMedia('(max-width: 400px)').matches) {
+      // Apply styles for screens smaller than or equal to 600px
+      classes.content.padding = theme.spacing(1);
+  }
+}, false);
+
 export default classes;
